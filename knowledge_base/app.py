@@ -41,7 +41,7 @@ def answer_query(query):
         "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json"
     }
-
+    #hitting groq api endpoint
     response = requests.post("https://api.groqcloud.com/v1/chat/completions", json=payload, headers=headers)
     
     #success / error catch
